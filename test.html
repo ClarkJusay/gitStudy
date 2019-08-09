@@ -44,6 +44,9 @@
     .clearfix {
         clear: both;
     }
+    .non-collapse {
+        overflow: auto;
+    }
     .cookie-crumbs {
         margin: 2%;
     }    
@@ -60,22 +63,40 @@
     }
     .feature-section {
         width: 100%;
+        height: 100%;
+        margin: 40px auto 0 auto;
+        text-align: center;
+        padding: 0 0 40px 0;
+    }
+    .feature-section p {
+        text-align: left;
+        line-height: 16px;
+        color: #333;
     }
     .feature-section-one {
-        width: 30%;
-        padding: 0px 1px 0px 3px;
+        display: inline-block;
+        float: left;
+        width: 25%;
+        padding: 0% 4% 0% 5%;
     }
     .feature-section img {
-        width: 80%;
-        margin: 10px 0 10px 0;
+        display: inline-block;
+        text-align: center;
+        height: 50px;
+        margin: 5px auto;
     }
     .feature-section-two {
-        width: 30%;
-        padding: 0px 1px 0px 1px;
+        display: inline-block;
+        float: left;
+        width: 24%;
+        padding: 0% 4% 0px 4%;
+        margin: 0 auto;
     }
     .feature-section-three {
-        width: 30%;
-        padding: 0px 1px 0px 3px;
+        display: inline-block;
+        float: left;
+        width: 25%;
+        padding: 0% 5% 0% 4%;
     }
 </style>
 <body>
@@ -111,7 +132,7 @@
 
             </div>
         </div>
-        <div class="feature-section">
+        <div class="feature-section non-collapse">
             <div class="feature-section-one">
                 <div>
                     <img src="images/date-icon.png" alt="Book now">
@@ -124,7 +145,7 @@
                 <div>
                     <img src="images/folder-icon.png" alt="Organise your files">
                     <p>
-                        Libero laudantium a, quam, voluptatibus tenetur impedit nam alias aut explicabo ex qui sit totam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur doloremque nesciunt inventore, cupiditate ab!
+                        Libero laudantium a, quam, voluptatibus tenetur impedit nam alias aut explicabo ex qui sit totam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consequuntur doloremque nesciunt inventore, cupiditate!
                     </p>
                 </div>
             </div>
@@ -132,8 +153,8 @@
                 <div>
                     <img src="images/profile-icon.png" alt="Manage your account">
                     <p>
-                        Ipsa consequuntur doloremque nesciunt inventore, cupiditate ab!
-                        Libero laudantium a, quam, voluptatibus tenetur impedit nam alias aut explicabo ex qui sit totam? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Tipsa consequuntur doloremque nesciunt inventore, cupiditate ab!
+                        Libero laudantium a, quam, voluptatibus tenetur impedit nam alias aut explicabo ex qui sit totam? Lorem ipsum dolor sit amet, consectetur adipisicing.
                     </p>
                 </div>
             </div>
