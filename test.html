@@ -43,7 +43,9 @@
 			margin-right: 3%;
 		}
 		.clearfix {
+			content: "";
 			clear: both;
+			display: table;
 		}
 		.non-collapse {
 			overflow: auto;
@@ -61,6 +63,35 @@
 			margin: 2%;
 			padding: 1%;
 			background-color: #ccc;
+		}
+		.dropdown-wrapper {
+			border: 1px solid #cccccc;
+			padding: 0px;
+			width: 90%;
+			height: auto;
+			margin: 0 auto 0 auto;
+		}
+		.show-dropdown {
+			background-color: #333333;
+			color: #ffffff;
+			height: 50px;
+			padding: 1px 10px 0 10px;
+			font-size: 15px;
+		}
+		.dropdown-content {
+			padding: 10px;
+			left: -9000em;
+			position: absolute;
+		}
+		.dropdown-wrapper div:hover div {
+			left: 0;
+		}
+		.dropdown-img {
+			width: 150px;
+			margin-left: 20px;
+		}
+		.float-left {
+			float: left;
 		}
 		.feature-section {
 			width: 100%;
@@ -166,33 +197,29 @@
 						</p>
 					</div>
 				</div>
-				<div class="">
-					<a href="">
-						<section>
-							<div>
-								<h2>
-									<div>
-										UX Movement: User experience design articles
-									</div>
-								</h2>
-								<div>
-									<h3 class="aq cv ej as av">
-										<div>
-											Learn new and innovative best practices in user experience
-											design that'll make your app, website, or user interface…
-										</div>
-									</h3>
-								</div>
-								<div>
-									<h4>
-										<div>
-											uxmovement.com
-										</div>
-									</h4>
-								</div></div
-							>
-							<div> <div></div></div></section></a
-				></div>
+			</div>
+			<div class="dropdown-wrapper">
+				<div class="show-dropdown">
+					<p>
+						<a href="">Click here!</a>
+					</p>
+				</div>
+				<div class="dropdown-content">
+					<div class="float-left">
+						<h1>UX Movement: User experience design articles</h1>
+						<p>
+							Learn new and innovative best practices in user experience design
+							that'll make your app, website, or user interface…
+						</p>
+						<p>
+							<a href="">uxmovement.com</a>
+						</p>
+					</div>
+					<div class="float-left">
+						<img class="dropdown-img" src="images/thumb.png" alt="" />
+					</div>
+					<div class="clearfix"> &nbsp; </div>
+				</div>
 			</div>
 		</div>
 	</body>
