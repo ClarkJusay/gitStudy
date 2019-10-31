@@ -83,7 +83,7 @@
 			left: -9000em;
 			position: absolute;
 		}
-		.dropdown-wrapper div:hover div {
+		.show-dropdown:hover .dropdown-content {
 			left: 0;
 		}
 		.dropdown-img {
@@ -129,6 +129,18 @@
 			float: left;
 			width: 25%;
 			padding: 0% 5% 0% 4%;
+		}
+		.add-height {
+			height: 300px;
+		}
+		.float-left {
+			padding: 0 0 0 50px;
+		}
+		.float-left h1 {
+			color: #333333;
+		}
+		.float-left p {
+			color: #333333;
 		}
 	</style>
 	<body>
@@ -203,24 +215,25 @@
 					<p>
 						<a href="">Click here!</a>
 					</p>
-				</div>
-				<div class="dropdown-content">
-					<div class="float-left">
-						<h1>UX Movement: User experience design articles</h1>
-						<p>
-							Learn new and innovative best practices in user experience design
-							that'll make your app, website, or user interface…
-						</p>
-						<p>
-							<a href="">uxmovement.com</a>
-						</p>
+					<div class="dropdown-content">
+						<div class="float-left">
+							<h1>UX Movement: User experience design articles</h1>
+							<p>
+								Learn new and innovative best practices in user experience
+								design that'll make your app, website…
+							</p>
+							<p>
+								<a href="">uxmovement.com</a>
+							</p>
+						</div>
+						<div class="float-left">
+							<img class="dropdown-img" src="images/thumb.png" alt="" />
+						</div>
+						<div class="clearfix"> &nbsp; </div>
 					</div>
-					<div class="float-left">
-						<img class="dropdown-img" src="images/thumb.png" alt="" />
-					</div>
-					<div class="clearfix"> &nbsp; </div>
 				</div>
 			</div>
+			<div class="add-height"> </div>
 		</div>
 	</body>
 </html>
